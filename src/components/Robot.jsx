@@ -38,6 +38,50 @@ export default class Robot extends Component {
             />
           </div>
 
+          <div id="dimensions">
+            <div className="dimension">
+              <label id="width">Width</label>
+              <div className="dimension-controls">
+                <input
+                  className="dimension-slider"
+                  type="range"
+                  value={this.state.width}
+                  min="100" max="500"
+                  onChange={this.onChangeUpdateRobot('width')}
+                />
+                <input
+                  className="dimension-number"
+                  type="number"
+                  value={this.state.width}
+                  min="100" max="500"
+                  onChange={this.onChangeUpdateRobot('width')}
+                />
+              </div>
+            </div>
+
+            <div className="dimension">
+              <label id="height">Height</label>
+              <div className="dimension-controls">
+                <input
+                  className="dimension-slider"
+                  type="range"
+                  value={this.state.height}
+                  min="100"
+                  max="500"
+                  onChange={this.onChangeUpdateRobot('height')}
+                />
+                <input
+                  className="dimension-number"
+                  type="number"
+                  value={this.state.height}
+                  min="100"
+                  max="500"
+                  onChange={this.onChangeUpdateRobot('width')}
+                />
+              </div>
+            </div>
+          </div>
+
           <div id="type">
             <label>Type</label>
             <select onChange={this.onChangeUpdateRobot('type')}>
@@ -46,46 +90,6 @@ export default class Robot extends Component {
               <option value="3">3</option>
               <option value="4">4</option>
             </select>
-          </div>
-
-          <div id="dimensions">
-            <div className="dimension">
-              <label>Width</label>
-              <input
-                className="dimension-slider"
-                type="range"
-                value={this.state.width}
-                min="100" max="500"
-                onChange={this.onChangeUpdateRobot('width')}
-              />
-              <input
-                className="dimension-number"
-                type="number"
-                value={this.state.width}
-                min="100" max="500"
-                onChange={this.onChangeUpdateRobot('width')}
-              />
-            </div>
-
-            <div className="dimension">
-              <label>Height</label>
-              <input
-                className="dimension-slider"
-                type="range"
-                value={this.state.height}
-                min="100"
-                max="500"
-                onChange={this.onChangeUpdateRobot('height')}
-              />
-              <input
-                className="dimension-number"
-                type="number"
-                value={this.state.height}
-                min="100"
-                max="500"
-                onChange={this.onChangeUpdateRobot('width')}
-              />
-            </div>
           </div>
 
           <div id="background">

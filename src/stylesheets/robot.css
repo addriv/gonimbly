@@ -6,7 +6,26 @@
 }
 #user-controls {
   border: solid gray 1px;
+  padding: 20px;
 }
-
+#name {
+  margin: 10px;
+}
+#name input {
+  margin-left: 10px;
+}
+#type {
+  margin: 10px;
+}
+#type select {
+  margin-left: 10px;
+}
+#width {
+  padding-right: 5.341px;
+}
 .dimension {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }

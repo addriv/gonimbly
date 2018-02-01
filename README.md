@@ -4,10 +4,8 @@
 
 ## Overview
 
-Robot factory uses [Robohash](https://robohash.org/) API to generate and display
-robots with specified traits.
-
-Built with React.
+Robot factory is a React application that uses [Robohash](https://robohash.org/) 
+API to generate and display robots with specified traits.
 
 <p align="center">
   <img src="https://github.com/addriv/gonimbly/blob/master/public/overview.png" width="600">

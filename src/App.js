@@ -14,16 +14,23 @@ class App extends Component {
     };
   }
    
-  uri() {
-    const { name, type, width, height, background } = this.state;
-    return `https://robohash.org/${name}?set=set${type}&size=${width}${height}&bgset=bg${background}`;
+  updateRobot(property) {
+    return (event) => {
+      this.setState({ [property]: event.target.value });
+    };
   }
-  
+
   render() {
+    const { name, type, width, height, background } = this.state;
+    const uri =  `https://robohash.org/${name}?set=set${type}&size=${width}${height}&bgset=bg${background}`;
+    
     return (
       <div className="robot-component">
-        <input type="range" value={this.state.width} min="50" max="400" onChange={this.update("rangeY")} />
-        <input type="range" value={this.state.height} min="50" max="400" onChange={this.update("rangeY")} />
+        <input type="text" placeholder="John Doe" value={this.state.name}
+        <input type="range" value={this.state.width} min="100" max="500" onChange={this.updateRobot('width')} />
+        <input type="text" value={this.state.width} min="100" max="500" onChange={this.updateRobot('width')} />
+        <input type="range" value={this.state.height} min="100" max="500" onChange={this.updateRobot('height')} />
+        <input type="text" value={this.state.height} min="100" max="500" onChange={this.updateRobot('width')} />
         <img alt="robot" src={this.uri}/>
       </div>
     );

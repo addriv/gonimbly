@@ -1,0 +1,12 @@
+#robot-component {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: center;
+}
+#user-controls {
+  border: solid gray 1px;
+}
+
+.dimension {
+}

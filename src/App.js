@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Robot from './components/Robot';
-import './stylesheets/app.css';
+import './stylesheets/App.css';
 
 const App = () => {
   return (

@@ -10,6 +10,12 @@
 }
 #left-panel {
   width: 322px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 0;
 }
 #right-panel {
   width: calc(100% - 322px);
@@ -19,19 +25,29 @@
   justify-content: center;
   min-width: 510px;
 }
+#greeting {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #user-controls {
   border: solid gray 1px;
   padding: 40px;
-  background-color: white;
   width: 239.76px;
-  height: calc(100% - 80px);
+  height: calc(100% - 150px);
+  margin: 0;
+  border: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border: 0;
+  font-size: 14px;
+  color: #585151;
+}
+h2 {
   margin: 0;
+  padding: 10px 0;
+  text-align: center;
+  color: #585151;
 }
 #name, #type, #background, .dimension {
   padding-top: 10px;
@@ -71,6 +87,6 @@
   padding-right: 10px;
 }
 #background select {
-  width: 144.38px;
-  text-indent: 60px;
+  width: 147.29px;
+  text-indent: 50px;
 }

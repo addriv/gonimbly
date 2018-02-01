@@ -28,6 +28,10 @@ export default class Robot extends Component {
     return (
       <div id="robot-component">
         <div id="left-panel">
+          <div id="greeting">
+            <h2>Hello Go Nimbly Team!</h2>
+          </div>
+        
           <div id="user-controls">
             <div id="name">
               <label>Name</label>

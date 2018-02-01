@@ -90,3 +90,8 @@ h2 {
   width: 147.29px;
   text-indent: 50px;
 }
+#name-error {
+  color: red;
+  font-size: 20px;
+  font-weight: 900;
+}
